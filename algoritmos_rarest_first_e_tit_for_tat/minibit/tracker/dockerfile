@@ -1,0 +1,4 @@
+# Dockerfile para peer
+FROM python:3.9
+COPY . /app
+CMD ["python", "/app/peer/peer_node.py", "--id", "${PEER_ID}", "--file", "data.txt"]
