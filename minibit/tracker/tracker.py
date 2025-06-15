@@ -1,5 +1,3 @@
-# tracker.py
-
 import socket
 import threading
 import json
@@ -8,10 +6,8 @@ import logging
 
 # Configura o log
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s] %(message)s')
-
 # Dados dos peers: { (ip, porta): [lista_blocos] }
 peers = {}
-
 # Lock para garantir consistência entre threads
 peers_lock = threading.Lock()
 
@@ -29,7 +25,7 @@ def handle_client(conn, addr):
             peers[peer_id] = blocos
             logging.info(f"Peer registrado: {peer_id}, blocos: {blocos}")
 
-        # Gera lista de peers exceto ele mesmo
+        # Gera lista de peers
         with peers_lock:
             outros_peers = [ {"ip": ip, "port": port, "blocks": peers[(ip, port)]}
                              for (ip, port) in peers if (ip, port) != peer_id ]
