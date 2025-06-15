@@ -1,5 +1,3 @@
-# start_tracker.py
-
 import tracker
 
 if __name__ == "__main__":
