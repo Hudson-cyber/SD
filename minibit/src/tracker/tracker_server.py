@@ -12,8 +12,8 @@ import logging
 from typing import Dict, List, Set, Optional, Tuple
 from dataclasses import dataclass, asdict
 
-from ..common.config import *
-from ..common.messages import Message, MessageType, MessageBuilder
+from SD.minibit.src.common.config import *
+from SD.minibit.src.common.messages import Message, MessageType, MessageBuilder
 
 @dataclass
 class PeerInfo:

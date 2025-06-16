@@ -7,7 +7,7 @@ from typing import Dict, List, Optional, Callable, Set
 from queue import Queue, Empty
 import struct
 
-from ..common.messages import Message, MessageType
+from SD.minibit.src.common.messages import Message, MessageType
 
 logger = logging.getLogger(__name__)
 

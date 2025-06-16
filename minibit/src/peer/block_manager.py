@@ -98,7 +98,7 @@ class BlockManager:
             
             # Verificar se arquivo está completo
             if len(self.blocks_owned) == self.total_blocks:
-                logger.info("Todos os blocos recebidos! Reconstruindo arquivo...")
+                logger.info("Todos os blocos recebidos! Reconstruindo arquivoSD.minibit.src..")
                 self.reconstruct_file()
             
             return True

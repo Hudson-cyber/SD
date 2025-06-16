@@ -6,8 +6,8 @@ import socket
 import json
 import logging
 from typing import List, Dict, Optional, Tuple
-from ..common.config import *
-from ..common.messages import Message, MessageBuilder
+from SD.minibit.src.common.config import *
+from SD.minibit.src.common.messages import Message, MessageBuilder
 
 class TrackerAPI:
     """Cliente para comunicação com o servidor tracker"""
